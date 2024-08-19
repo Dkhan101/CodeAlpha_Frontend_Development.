@@ -1,0 +1,53 @@
+/* styles.css */
+
+body {
+    background-image: url("bg3.jpg"); /* added background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-container {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #6b5c6758; /* added background color */
+    padding: 80px;
+    border: 1px solid #0a7a2c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-image {
+    width: 40%;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.gallery-image:hover {
+    transform: scale(1.5);
+}
+
+.nav {
+    margin-top: 20px;
+}
+
+.prev, .next {
+    background-color: #478be4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.prev:hover, .next:hover {
+    background-color: #3e8e41;
+}
