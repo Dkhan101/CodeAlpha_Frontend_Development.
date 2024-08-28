@@ -1,0 +1,107 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('bg_music.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Music player container */
+.music-player {
+    background-color: rgba(217, 202, 146, 0.7);
+    border-radius: 1px;
+    padding: 30px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 15px 30px rgba(16, 16, 15, 0.7);
+    position: relative;
+}
+
+/* Background overlay for styling */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.5);
+    z-index: -1;
+}
+
+/* Song cover image styling */
+.cover {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Song title and artist */
+.song-info h2,
+.song-info h3 {
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+/* Control buttons container */
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Button styles */
+button {
+    background-color: #282a2f;
+    border: none;
+    border-radius: 90%;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 5px;
+    color: #f0f1f2;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #010e12;
+    color: #edf0f6;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+/* Button active effect */
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon size adjustment */
+button i {
+    font-size: 20px;
+}
+
+/* Progress bar container */
+.progress-container {
+    background-color: #575656;
+    border-radius: 5px;
+    height: 5px;
+    margin-top: 20px;
+    position: relative;
+    width: 100%;
+}
+
+/* Progress bar */
+.progress {
+    background-color: #f0f1f2;
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+}
